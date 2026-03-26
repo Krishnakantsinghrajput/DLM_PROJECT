@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Distributed Lock Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="card">
+
+<h2>Distributed Lock Manager</h2>
+
+<input id="user" placeholder="Enter User">
+<input id="resource" placeholder="Enter Resource">
+
+<div class="btns">
+
+<button onclick="lock()">Lock</button>
+<button onclick="unlock()">Unlock</button>
+
+</div>
+
+<h3>Status</h3>
+<div id="result" class="result"></div>
+
+<h3>Animation</h3>
+
+<div class="animation">
+
+<div id="lockBox" class="lockBox">
+🔒 FREE
+</div>
+
+<div id="queueBox" class="queueBox">
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
