@@ -1,11 +1,11 @@
-let queue = [];
-
+const BASE_URL = "http://localhost:3000";
+let queue = []; 
 function lock(){
 
 const user = document.getElementById("user").value;
 const resource = document.getElementById("resource").value;
 
-fetch(`/lock?resource=${resource}&user=${user}`)
+fetch(`${BASE_URL}/lock?resource=${resource}&user=${user}`)
 .then(res=>res.text())
 .then(data=>{
 
@@ -32,7 +32,7 @@ function unlock(){
 
 const resource=document.getElementById("resource").value;
 
-fetch(`/unlock?resource=${resource}`)
+fetch(`${BASE_URL}/unlock?resource=${resource}`)
 .then(res=>res.text())
 .then(data=>{
 
